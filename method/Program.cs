@@ -1,15 +1,4 @@
 ﻿
-
-
-
-
-
-
-
-/// тестовое задание по теме методы
-// test
-
-
 static string[] CreateArr(int num) // метод будет использоваться для формирования цветов и названий животных
 {
     var result = new string[num];
@@ -30,7 +19,6 @@ static bool Checknum(string number, out int corrnumber)
     }
 }
 
-
 static string GetValidName()
 {
     while (true)
@@ -44,8 +32,6 @@ static string GetValidName()
         Console.WriteLine("Слово должно содержать буквы");
     }
 }
-
-
 
 static (string Name, string LastName, int Age, string[] ArrPets, string[] ArrColor) EnterUsers()
 {
@@ -113,9 +99,6 @@ static (string Name, string LastName, int Age, string[] ArrPets, string[] ArrCol
 
     User.ArrPets = ArrPets;
 
-
-    // Программа вывода о наличии любимых цветов 
-
     Console.WriteLine("Есть любимые цвета?");
     string haveColor;
     do
@@ -159,10 +142,6 @@ static (string Name, string LastName, int Age, string[] ArrPets, string[] ArrCol
 }
 
 
-
-
-
-
 static void DisplayInfo((string Name, string LastName, int Age, string[] ArrPets, string[] ArrColor) User)
 {
     Console.WriteLine($"Имя: {User.Name}");
@@ -180,8 +159,6 @@ static void DisplayInfo((string Name, string LastName, int Age, string[] ArrPets
     {
         Console.WriteLine("Животных нет");
     }
-
-
 
     Console.WriteLine("Цвета");
     if (User.ArrColor != null && User.ArrColor.Length > 0)
